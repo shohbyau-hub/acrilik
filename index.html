@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Order Merchandise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/80" alt="Logo Shinby.Hoonie">
+  <h1>Pre-Order Merchandise</h1>
+  <p>Pilih produk favoritmu & lakukan pre-order sekarang!</p>
+</header>
+
+<div class="container">
+
+  <!-- Beranda -->
+  <div id="home">
+    <button class="card" onclick="showProduct('keychain')">
+      <h2>🔑 Pre-Order Keychain NCT Dream</h2>
+      <p>Keychain lucu dengan karakter chibi NCT Dream.</p>
+    </button>
+    <button class="card" onclick="showProduct('idcard')">
+      <h2>💳 Pre-Order ID Card NCT Dream</h2>
+      <p>ID Card eksklusif dengan desain member NCT Dream.</p>
+    </button>
+    <button class="card" onclick="showProduct('cardholder')">
+      <h2>📂 Pre-Order Card Holder NCT Dream</h2>
+      <p>Card holder elegan dengan logo NCT Dream emboss.</p>
+    </button>
+    <button class="card" onclick="showProduct('keychain_enhypen')">
+      <h2>✨ Pre-Order Keychain Enhypen</h2>
+      <p>Keychain berbahan akrilik yang memaksimalkan desain.</p>
+    </button>
+  </div>
+
+  <!-- Halaman Produk -->
+  <div id="productPage" style="display:none;">
+    <h2 id="productTitle"></h2>
+    <img id="productImg" class="product-img" src="" alt="Produk Merchandise">
+    <p id="productDesc"></p>
+    <p><strong id="productPrice"></strong></p>
+
+    <h3>Form Pre-Order untuk <span id="formProduct"></span></h3>
+    <form id="orderForm">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="jumlah">Jumlah Pesanan</label>
+      <input type="number" id="jumlah" min="1" value="1" required>
+
+      <label for="alamat">Alamat Lengkap</label>
+      <textarea id="alamat" rows="3" required></textarea>
+
+      <button type="submit">Kirim Pesanan via WhatsApp</button>
+    </form>
+
+    <button class="back-btn" onclick="goHome()">⬅ Kembali ke Beranda</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
