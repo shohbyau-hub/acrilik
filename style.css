@@ -28,7 +28,7 @@ header img {
 }
 
 .card {
-  background: white;
+  background: green;
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -93,4 +93,5 @@ button:hover {
   margin: 15px 0;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
 }
